@@ -1,5 +1,6 @@
 ---
 import Nav from '../components/Nav.astro'
+import '../styles/global.css'
 
 // Script que se ejecuta en el cliente para inicializar el tema
 const themeScript = `
@@ -42,7 +43,6 @@ const themeScript = `
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <slot name="head" />
-    <link rel="stylesheet" href="/src/styles/global.css">
     <title><slot /> - Hackathon YWT</title>
     <script>
       /** Configura el tema inicial y expone funciones de tema */
